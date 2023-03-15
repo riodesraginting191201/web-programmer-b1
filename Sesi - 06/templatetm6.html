@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tugas 6</title>
+</head>
+<body>
+    <p id="paragraf"><b>I graduated from AMIK MAHAPUTRA RIAU majoring in Diploma, Program Informatics Management. I
+am interested in developing myself in the field that I studied and learning in the field of information
+technology</b></p>
+    <script>
+        const text = document.getElementById('paragraf');
+        let colors = ['red', 'green', 'blue'];
+        let index = 0;
+        function animateText() {
+            text.style.color = colors[index];
+            index = (index + 1) % colors.length;
+        }
+        setInterval(animateText, 150); // mengulang kembali fungsi animasi teks setiap 150ms
+        setTimeout(() => {
+            clearInterval(animateText); // menghentikan interval setelah 5000ms (5 detik)
+        }, 15000);
+       
+    </script>
+
+</body>
+
+</html>
